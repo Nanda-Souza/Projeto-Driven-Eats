@@ -5,17 +5,19 @@ body {
   
   .container-pagina {
     width: 414px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0;
   }
   
   .barra-superior {
-    width: 100%;
+    width: 414px;
     height: 92px;
     background-color: #cf2b2b;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: relative;
+    position: fixed;
   }
   
   h1 {
@@ -36,16 +38,36 @@ body {
   
   .menu-principal {
     width: 100%;
-    height: 900px;
+    height: 1080px;
     background-color: #e5e5e5;
   }
   
-  .escolha {
+  .escolha1 {
     font-family: "Righteous";
     color: #333333;
     font-weight: 400;
     font-size: 26px;
-    margin-top: 31px;
+    margin-top: 120px;
+    margin-bottom: 17px;
+    margin-left: 19px;
+  }
+
+  .escolha2 {
+    font-family: "Righteous";
+    color: #333333;
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 27px;
+    margin-bottom: 17px;
+    margin-left: 19px;
+  }
+
+  .escolha3 {
+    font-family: "Righteous";
+    color: #333333;
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 27px;
     margin-bottom: 17px;
     margin-left: 19px;
   }
@@ -96,9 +118,12 @@ body {
   }
   
   .barra-inferior {
-    width: 100%;
+    width: 414px;
     height: 92px;
+    margin-bottom: auto;
     background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
   }
   
   .selecao {
