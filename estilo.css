@@ -17,7 +17,7 @@ body {
     height: 92px;
     background-color: #cf2b2b;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: fixed;
+    position: fixed;    
   }
   
   h1 {
@@ -38,8 +38,10 @@ body {
   
   .menu-principal {
     width: 100%;
-    height: 1080px;
+    height: 1130px;
     background-color: #e5e5e5;
+    box-sizing: border-box;
+    overflow: hidden;
   }
   
   .escolha1 {
@@ -73,10 +75,15 @@ body {
   }
   
   .container-pratos {
-    display: flex;
+    display: flex;    
     margin-left: 19px;
+    width: 550px; 
   }
   
+  .prato, .bebida, .sobremesa{
+    overflow-x: scroll;   
+  }
+
   .pratos {
     width: 172px;
     height: 216px;
@@ -84,6 +91,7 @@ body {
     margin-right: 16px;
     border-radius: 9px;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    
   }
   
   .pratos img {
@@ -123,7 +131,7 @@ body {
     margin-bottom: auto;
     background-color: #ffffff;
     position: fixed;
-    bottom: 0;
+    bottom: 0;    
   }
   
   .selecao {
@@ -145,4 +153,23 @@ body {
     width: 185px;
     line-height: 23px;
   }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
   
+@media (max-width: 414px) {
+  .container-pagina {
+    width: 100%;
+  }
+  .barra-superior {
+    width: 100%;
+  }
+  .barra-inferior,
+  .selecao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
