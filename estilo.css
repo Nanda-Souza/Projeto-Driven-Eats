@@ -38,7 +38,7 @@ body {
   
   .menu-principal {
     width: 100%;
-    height: 1130px;
+    height: 1100px;
     background-color: #e5e5e5;
     box-sizing: border-box;
     overflow: hidden;
@@ -77,7 +77,7 @@ body {
   .container-pratos {
     display: flex;    
     margin-left: 19px;
-    width: 550px; 
+    width: 570px; 
   }
   
   .prato, .bebida, .sobremesa{
@@ -153,23 +153,24 @@ body {
     width: 185px;
     line-height: 23px;
   }
-
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
   
-@media (max-width: 414px) {
-  .container-pagina {
-    width: 100%;
-  }
-  .barra-superior {
-    width: 100%;
-  }
-  .barra-inferior,
-  .selecao {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
+  @media (max-width: 400px) {
+    .container-pagina {
+      width: 100%;
+    }
+    .barra-superior {
+      width: 100%;
+    }
+  
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+    .barra-inferior {
+      width: 100%;
+      display: flex;
+    }
+  
+    .selecao {
+      width: 100%;
+      margin-left: 0px;
+    }
