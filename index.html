@@ -48,22 +48,22 @@
         <!-- inicio sessão prato -->
         <section class="prato">
           <!-- inicio container pratos -->
-          <div class="container-pratos">
+          <div class="container-pratos" data-test="dishes">
           <!-- inicio menu pratos -->
           
           <!-- inicio prato 1 -->
-          <div id="hamburger" class="pratos" onclick="escolherHamburger();">
+          <div id="hamburger" class="pratos" onclick="escolherHamburger();" data-test="food-option">
             <img src="imagem/hamburguer.png" />
-            <p class="titulo">Hamburguer</p>
+            <p class="titulo" data-test="food-title">Hamburguer</p>
             <p class="descricao">Hamburguer e batata</p>
             <p class="preco">R$ 34,90</p>
             <ion-icon id="iconeHamburguer" class="checkmark" name="checkmark-circle"></ion-icon>
           </div>
           <!-- fim prato 1 -->
           <!-- inicio prato 2 -->
-          <div id="pizza" class="pratos" onclick="escolherPizza()">
+          <div id="pizza" class="pratos" onclick="escolherPizza()" data-test="food-option">
             <img src="imagem/pizza.png" />
-            <p class="titulo">Pizza de Calabresa</p>
+            <p class="titulo" data-test="food-title">Pizza de Calabresa</p>
             <p class="descricao">Pizza de calabresa</p>
             <p class="preco">R$ 45,90</p>
             <ion-icon id="iconePizza" class="checkmark" name="checkmark-circle"></ion-icon>
@@ -71,9 +71,9 @@
           <!-- fim prato 2 -->
 
           <!-- inicio prato 3 -->
-          <div id="cachorro" class="pratos" onclick="escolherCachorro()">
+          <div id="cachorro" class="pratos" onclick="escolherCachorro()" data-test="food-option">
             <img src="imagem/cachorroquente.png" />
-            <p class="titulo">Cachorro Quente</p>
+            <p class="titulo" data-test="food-title">Cachorro Quente</p>
             <p class="descricao">Cachorro completo</p>
             <p class="preco">R$ 20,90</p>
             <ion-icon id="iconeCachorro" class="checkmark" name="checkmark-circle"></ion-icon>
@@ -89,15 +89,15 @@
         <p class="escolha2">Agora, sua bebida</p>
 
       <!-- inicio sessão bebida -->
-      <section class="bebida">
+      <section class="bebida" data-test="drinks">
         <!-- inicio container bebidas -->
         <div class="container-pratos">
           <!-- inicio menu bebidas -->
 
           <!-- inicio bebida 1 -->
-          <div id="coquinha" class="pratos" onclick="escolherCoquinha()">
+          <div id="coquinha" class="pratos" onclick="escolherCoquinha()" data-test="food-option">
             <img src="imagem/cocacola.png" />
-            <p class="titulo">Coquinha gelada</p>
+            <p class="titulo" data-test="food-title">Coquinha gelada</p>
             <p class="descricao">Lata 350ml</p>
             <p class="preco">R$ 6,90</p>
             <ion-icon id="iconeCoquinha" class="checkmark" name="checkmark-circle"></ion-icon>
@@ -105,9 +105,9 @@
           <!-- fim bebida 1 -->
 
           <!-- inicio bebida 2 -->
-          <div id="guarana" class="pratos" onclick="escolherGuarana()">
+          <div id="guarana" class="pratos" onclick="escolherGuarana()" data-test="food-option">
             <img src="imagem/guarana.png" />
-            <p class="titulo">Guaraná gelado</p>
+            <p class="titulo" data-test="food-title">Guaraná gelado</p>
             <p class="descricao">Lata 350ml</p>
             <p class="preco">R$ 5,90</p>
             <ion-icon id="iconeGuarana" class="checkmark" name="checkmark-circle"></ion-icon>
@@ -115,9 +115,9 @@
           <!-- fim bebida 2 -->
 
            <!-- inicio bebida 3 -->
-           <div id="cha" class="pratos" onclick="escolherCha()">
+           <div id="cha" class="pratos" onclick="escolherCha()" data-test="food-option">
             <img src="imagem/hellosummer.png" />
-            <p class="titulo">Chá gelado</p>
+            <p class="titulo" data-test="food-title">Chá gelado</p>
             <p class="descricao">Lata 380ml</p>
             <p class="preco">R$ 8,90</p>
             <ion-icon id="iconeCha" class="checkmark" name="checkmark-circle"></ion-icon>
@@ -132,15 +132,15 @@
 
         <p class="escolha3">Por fim, sua sobremesa</p>
       <!-- inicio sessão sobremesa -->
-      <section class="sobremesa">
+      <section class="sobremesa" data-test="desserts">
         <!-- inicio container sobremesas -->
         <div class="container-pratos">
           <!-- inicio menu sobremesas -->
 
           <!-- inicio sobremesas 1 -->
-          <div id="torta-limao" class="pratos" onclick="escolherTortaLimao()">
+          <div id="torta-limao" class="pratos" onclick="escolherTortaLimao()" data-test="food-option">
             <img src="imagem/tortalimao.png" />
-            <p class="titulo">Torta de Limão</p>
+            <p class="titulo" data-test="food-title">Torta de Limão</p>
             <p class="descricao">Fatia de torta</p>
             <p class="preco">R$ 9,90</p>
             <ion-icon id="iconeTortaLimao" class="checkmark" name="checkmark-circle"></ion-icon>
@@ -148,9 +148,9 @@
           <!-- fim sobremesas 1 -->
 
           <!-- inicio sobremesas 2 -->
-          <div id="torta-velvet" class="pratos" onclick="escolherTortaVelvet()">
+          <div id="torta-velvet" class="pratos" onclick="escolherTortaVelvet()" data-test="food-option">
             <img src="imagem/tortaredvelvet.png" />
-            <p class="titulo">Torta Red Velvet</p>
+            <p class="titulo" data-test="food-title">Torta Red Velvet</p>
             <p class="descricao">Fatia de torta </p>
             <p class="preco">R$ 12,90</p>
             <ion-icon id="iconeTortaVelvet" class="checkmark" name="checkmark-circle"></ion-icon>
@@ -158,9 +158,9 @@
           <!-- fim sobremesas 2 -->
 
            <!-- inicio sobremesas 3 -->
-           <div id="torta-chocolate" class="pratos" onclick="escolherTortaChocolate()">
+           <div id="torta-chocolate" class="pratos" onclick="escolherTortaChocolate()" data-test="food-option">
             <img src="imagem/tortachocolate.png" />
-            <p class="titulo">Torta de Chocolate</p>
+            <p class="titulo" data-test="food-title">Torta de Chocolate </p>
             <p class="descricao">Fatia de torta</p>
             <p class="preco">R$ 11,90</p>
             <ion-icon id="iconeTortaChoco" class="checkmark" name="checkmark-circle"></ion-icon>
@@ -178,7 +178,7 @@
 
       <!-- inicio da barra-inferior -->
       <div class="barra-inferior">
-        <div id="botao-finalizar" class="selecao" onclick="fecharPedido()">
+        <div id="botao-finalizar" class="selecao" onclick="fecharPedido()" data-test="finish-button">
           <p id="botao" class="selecione">Selecione os 3 itens para fechar o pedido</p>
         </div>
       </div>
@@ -186,8 +186,7 @@
     </div>
 
     <!-- inicio inclusão do script.js para rodar functions -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js"></script>
     <!-- fim inclusão do script.js para rodar functions -->
 

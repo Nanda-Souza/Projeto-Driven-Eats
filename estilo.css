@@ -1,6 +1,6 @@
 body {
     font-family: "Roboto", sans-serif;
-    background-color: gray;
+    background-color: #cbcbcb;
   }
   
   .container-pagina {
@@ -184,6 +184,7 @@ body {
     ::-webkit-scrollbar {
       width: 0px;
     }
+    
     .barra-inferior {
       width: 100%;
       display: flex;
