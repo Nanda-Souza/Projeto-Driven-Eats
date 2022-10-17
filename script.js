@@ -1,4 +1,21 @@
+let selecaoPrato = false;
+let selecaoBebida = false;
+let selecaoSobremesa = false;
+let pedidoPronto = false;
 
+//função que confirma que 3 items foram selecionados
+function pedidosEscolhidos() {
+    // adicionar borda verde na seleção 
+    if (
+      selecaoPrato === true &&
+      selecaoBebida === true &&
+      selecaoSobremesa === true
+    ) {
+      document.getElementById("botao-finalizar").style.backgroundColor = "#32B72F";
+      document.getElementById("botao").innerHTML = "<p> Fechar Pedido </p>";
+      pedidoPronto = true;
+    }
+  }
 
 function escolherHamburger() {
     // adicionar borda verde na seleção do hamburger
@@ -9,7 +26,8 @@ function escolherHamburger() {
     document.getElementById("cachorro").style.borderColor = "white"
     document.getElementById("iconeCachorro").style.opacity = "0"     
     selecaoPrato = true;
-    prato = "Hamburger"  
+    prato = "Hamburger"
+    pedidosEscolhidos();  
 }
 
 function escolherPizza() {
@@ -22,6 +40,7 @@ function escolherPizza() {
     document.getElementById("iconeCachorro").style.opacity = "0"
     selecaoPrato = true;
     prato = "Pizza de Calabresa"
+    pedidosEscolhidos();
 }
 
 function escolherCachorro() {
@@ -34,6 +53,7 @@ function escolherCachorro() {
     document.getElementById("iconeHamburguer").style.opacity = "0"
     selecaoPrato = true;
     prato = "Cachorro Quente"
+    pedidosEscolhidos();
 }
 
 function escolherCoquinha() {
@@ -46,6 +66,7 @@ function escolherCoquinha() {
     document.getElementById("iconeGuarana").style.opacity = "0"
     selecaoBebida = true;
     bebida = "Coquinha gelada"
+    pedidosEscolhidos();
 }
 
 function escolherGuarana() {
@@ -57,7 +78,8 @@ function escolherGuarana() {
     document.getElementById("cha").style.borderColor = "white"
     document.getElementById("iconeCha").style.opacity = "0"
     selecaoBebida = true;
-    bebida = "Guaraná gelado"   
+    bebida = "Guaraná gelado"  
+    pedidosEscolhidos(); 
 }
 function escolherCha() {
     // adicionar borda verde na seleção do guarana
@@ -69,6 +91,7 @@ function escolherCha() {
     document.getElementById("iconeGuarana").style.opacity = "0"
     selecaoBebida = true;
     bebida = "Chá gelado"   
+    pedidosEscolhidos();
 }
 
 function escolherTortaLimao() {
@@ -81,6 +104,7 @@ function escolherTortaLimao() {
     document.getElementById("iconeTortaChoco").style.opacity = "0"
     selecaoSobremesa = true;
     sobremesa = "Torta de Limão"
+    pedidosEscolhidos();
 }
 
 function escolherTortaVelvet() {
@@ -93,6 +117,7 @@ function escolherTortaVelvet() {
     document.getElementById("iconeTortaChoco").style.opacity = "0"
     selecaoSobremesa = true;
     sobremesa = "Torta Red Velvet"
+    pedidosEscolhidos();
 }
 
 function escolherTortaChocolate() {
@@ -105,6 +130,7 @@ function escolherTortaChocolate() {
     document.getElementById("iconeTortaVelvet").style.opacity = "0"
     selecaoSobremesa = true;
     sobremesa = "Torta de Chocolate"
+    pedidosEscolhidos();
 }
 
 
